@@ -1,8 +1,8 @@
 <template>
   <div class="about">
     <h1>Learn more about Polygonjs</h1>
-    <p><a :href="polygonjsUrl" target="_blank">{{polygonjsUrl}}</a></p>
-    <p><a :href="githubUrl" target="_blank">{{githubUrl}}</a></p>
+    <p><a :href="polygonjsUrl" target="_blank">Polygonjs</a></p>
+    <p><a :href="githubUrl" target="_blank">Github</a></p>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default defineComponent({
   setup() {
 
     const polygonjsUrl = computed(()=>'https://polygonjs.com')
-    const githubUrl = computed(()=>'https://github.com/polygonjs/polygonjs')
+    const githubUrl = computed(()=>'https://github.com/polygonjs/polygonjs-vue3')
 
     return {
       polygonjsUrl,

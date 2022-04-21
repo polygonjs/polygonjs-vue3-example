@@ -4,7 +4,8 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/scene_01">Scene 01</router-link> |
     <router-link to="/scene_02">Scene 02</router-link> |
-    <router-link to="/scene_03">Scene 03</router-link>
+    <router-link to="/scene_03">Scene 03</router-link> |
+    <a href="https://github.com/polygonjs/polygonjs-vue3" target="_blank">Github</a>
   </nav>
   <router-view v-slot="{ Component }">
   <keep-alive>
