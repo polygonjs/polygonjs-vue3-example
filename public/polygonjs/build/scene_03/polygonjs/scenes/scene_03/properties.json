@@ -1,0 +1,10 @@
+{
+	"frame": 11918,
+	"maxFrame": 100,
+	"maxFrameLocked": false,
+	"realtimeState": true,
+	"mainCameraNodePath": null,
+	"versions": {
+		"polygonjs": "1.1.252"
+	}
+}

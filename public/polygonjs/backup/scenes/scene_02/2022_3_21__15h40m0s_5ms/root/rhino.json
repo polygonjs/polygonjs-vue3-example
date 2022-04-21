@@ -1,0 +1,38 @@
+{
+	"type": "geo",
+	"nodes": {
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshPhysicalBuilder1"
+			},
+			"inputs": [
+				"hierarchy1"
+			],
+			"flags": {
+				"display": true
+			}
+		},
+		"fileGLTF1": {
+			"type": "fileGLTF",
+			"params": {
+				"url": "models/rhino.glb?timestamp=1650547623667"
+			}
+		},
+		"hierarchy1": {
+			"type": "hierarchy",
+			"params": {
+				"mode": 1
+			},
+			"inputs": [
+				"fileGLTF1"
+			]
+		}
+	},
+	"flags": {
+		"display": true
+	},
+	"selection": [
+		"MAT"
+	]
+}

@@ -1,0 +1,125 @@
+{
+	"type": "geo",
+	"nodes": {
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshPhysicalBuilder1"
+			},
+			"inputs": [
+				"hierarchy1"
+			]
+		},
+		"fileGLTF1": {
+			"type": "fileGLTF",
+			"params": {
+				"url": "models/rhino.glb?timestamp=1650547623667",
+				"draco": 0
+			}
+		},
+		"hierarchy1": {
+			"type": "hierarchy",
+			"params": {
+				"mode": 1
+			},
+			"inputs": [
+				"fileGLTF1"
+			]
+		},
+		"scatter1": {
+			"type": "scatter",
+			"params": {
+				"pointsCount": 10000
+			},
+			"inputs": [
+				"hierarchy1"
+			]
+		},
+		"point1": {
+			"type": "point",
+			"params": {
+				"updateX": 1,
+				"x": "ch('m') * round(@P.x / ch('m'))",
+				"updateY": 1,
+				"y": "ch('m') * round(@P.y / ch('m'))",
+				"updateZ": 1,
+				"z": "ch('m') * round(@P.z / ch('m'))",
+				"m": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true
+					},
+					"raw_input": "ch(\"../fuse1/dist\")"
+				}
+			},
+			"inputs": [
+				"scatter1"
+			]
+		},
+		"fuse1": {
+			"type": "fuse",
+			"inputs": [
+				"point1"
+			]
+		},
+		"instance1": {
+			"type": "instance",
+			"params": {
+				"material": "../MAT/meshPhysicalBuilder_INSTANCES"
+			},
+			"inputs": [
+				"roundedBox1",
+				"attribDelete1"
+			]
+		},
+		"attribDelete1": {
+			"type": "attribDelete",
+			"params": {
+				"name": "normal"
+			},
+			"inputs": [
+				"fuse1"
+			]
+		},
+		"roundedBox1": {
+			"type": "roundedBox",
+			"params": {
+				"size": [
+					"0.95*ch(\"../point1/m\")",
+					"0.95*ch(\"../point1/m\")",
+					"0.95*ch(\"../point1/m\")"
+				],
+				"bevel": "0.05*ch(\"../point1/m\")"
+			}
+		},
+		"transform1": {
+			"type": "transform",
+			"params": {
+				"applyOn": 1,
+				"t": [
+					-1.7,
+					0,
+					0
+				]
+			},
+			"inputs": [
+				"instance1"
+			]
+		},
+		"merge1": {
+			"type": "merge",
+			"inputs": [
+				"material1",
+				"transform1"
+			],
+			"flags": {
+				"display": true
+			},
+			"cloned_state_overriden": true
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}

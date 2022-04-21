@@ -1,0 +1,14 @@
+{
+	"type": "materialsNetwork",
+	"nodes": {
+		"meshLambert1": {
+			"type": "meshLambert",
+			"params": {
+				"useVertexColors": 1
+			}
+		}
+	},
+	"selection": [
+		"meshLambert1"
+	]
+}

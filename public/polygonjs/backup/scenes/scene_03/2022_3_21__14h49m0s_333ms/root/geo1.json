@@ -1,0 +1,54 @@
+{
+	"type": "geo",
+	"nodes": {
+		"box1": {
+			"type": "box",
+			"params": {
+				"sizes": [
+					1,
+					1,
+					4.4
+				]
+			}
+		},
+		"transform1": {
+			"type": "transform",
+			"params": {
+				"t": [
+					0,
+					0,
+					1.1
+				]
+			},
+			"inputs": [
+				"box1"
+			]
+		},
+		"copy1": {
+			"type": "copy",
+			"params": {
+				"count": 7,
+				"t": [
+					2,
+					0,
+					0
+				]
+			},
+			"inputs": [
+				"transform1"
+			]
+		},
+		"audioNotes1": {
+			"type": "audioNotes",
+			"inputs": [
+				"copy1"
+			],
+			"flags": {
+				"display": true
+			}
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}

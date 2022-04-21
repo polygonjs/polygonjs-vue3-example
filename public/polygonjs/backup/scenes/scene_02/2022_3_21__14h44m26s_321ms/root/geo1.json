@@ -1,0 +1,133 @@
+{
+	"type": "geo",
+	"nodes": {
+		"text_welcome": {
+			"type": "text",
+			"params": {
+				"font": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/fonts/droid_sans_bold.typeface.json",
+				"text": "Welcome",
+				"extrude": 0.18,
+				"segments": 4
+			}
+		},
+		"text_to": {
+			"type": "text",
+			"params": {
+				"font": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/fonts/droid_sans_bold.typeface.json",
+				"text": "to",
+				"extrude": 0.18,
+				"segments": 4
+			}
+		},
+		"text_Polygonjs": {
+			"type": "text",
+			"params": {
+				"font": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/fonts/droid_sans_bold.typeface.json",
+				"text": "POLYGONJS",
+				"extrude": 0.18,
+				"segments": 4
+			}
+		},
+		"merge1": {
+			"type": "merge",
+			"inputs": [
+				"color1",
+				"color2",
+				"color3"
+			]
+		},
+		"color1": {
+			"type": "color",
+			"params": {
+				"color": [
+					1,
+					0.5411764705882353,
+					0.5411764705882353
+				]
+			},
+			"inputs": [
+				"transform1"
+			]
+		},
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "/geo1/materials1/meshLambert1"
+			},
+			"inputs": [
+				"merge1"
+			],
+			"flags": {
+				"display": true
+			}
+		},
+		"color2": {
+			"type": "color",
+			"params": {
+				"color": [
+					0.45098039215686275,
+					1,
+					0.3803921568627451
+				]
+			},
+			"inputs": [
+				"transform3"
+			]
+		},
+		"color3": {
+			"type": "color",
+			"params": {
+				"color": [
+					0.3607843137254902,
+					0.4980392156862745,
+					1
+				]
+			},
+			"inputs": [
+				"transform2"
+			]
+		},
+		"transform1": {
+			"type": "transform",
+			"params": {
+				"t": [
+					"-centroid(0).x",
+					1.25,
+					0
+				]
+			},
+			"inputs": [
+				"text_welcome"
+			]
+		},
+		"transform2": {
+			"type": "transform",
+			"params": {
+				"t": [
+					"-centroid(0).x",
+					-1.45,
+					0
+				]
+			},
+			"inputs": [
+				"text_Polygonjs"
+			]
+		},
+		"transform3": {
+			"type": "transform",
+			"params": {
+				"t": [
+					"-centroid(0).x",
+					0,
+					0
+				]
+			},
+			"inputs": [
+				"text_to"
+			]
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}

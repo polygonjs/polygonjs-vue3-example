@@ -1,0 +1,33 @@
+{
+	"type": "root",
+	"nodes": {
+		"hemisphereLight1": {
+			"type": "hemisphereLight",
+			"flags": {
+				"display": true
+			}
+		},
+		"spotLight1": {
+			"type": "spotLight",
+			"params": {
+				"t": [
+					2,
+					2,
+					0
+				]
+			},
+			"flags": {
+				"display": true
+			}
+		},
+		"audioListener1": {
+			"type": "audioListener",
+			"inputs": [
+				"perspectiveCamera1"
+			],
+			"flags": {
+				"display": true
+			}
+		}
+	}
+}

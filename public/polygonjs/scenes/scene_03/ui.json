@@ -1,0 +1,232 @@
+{
+	"nodes": {
+		"hemisphereLight1": {
+			"pos": [
+				150,
+				100
+			]
+		},
+		"spotLight1": {
+			"pos": [
+				150,
+				200
+			]
+		},
+		"audioListener1": {
+			"pos": [
+				-200,
+				300
+			]
+		},
+		"geo1": {
+			"pos": [
+				-50,
+				-150
+			],
+			"nodes": {
+				"box1": {
+					"pos": [
+						-100,
+						-150
+					]
+				},
+				"transform1": {
+					"pos": [
+						-100,
+						-50
+					]
+				},
+				"copy1": {
+					"pos": [
+						-100,
+						150
+					]
+				},
+				"audioNotes1": {
+					"pos": [
+						-100,
+						300
+					]
+				},
+				"material1": {
+					"pos": [
+						-100,
+						550
+					]
+				},
+				"actor1": {
+					"pos": [
+						-100,
+						450
+					],
+					"nodes": {
+						"onObjectHover1": {
+							"pos": [
+								-150,
+								-300
+							]
+						},
+						"playInstrumentNote1": {
+							"pos": [
+								400,
+								-250
+							]
+						},
+						"getObjectAttribute1": {
+							"pos": [
+								250,
+								-150
+							]
+						},
+						"triggerTwoWaySwitch1": {
+							"pos": [
+								150,
+								-300
+							]
+						},
+						"twoWaySwitch1": {
+							"pos": [
+								100,
+								150
+							]
+						},
+						"constant1": {
+							"pos": [
+								-150,
+								150
+							]
+						},
+						"constant2": {
+							"pos": [
+								-150,
+								250
+							]
+						},
+						"onTick1": {
+							"pos": [
+								400,
+								50
+							]
+						},
+						"setObjectMaterialColor1": {
+							"pos": [
+								600,
+								100
+							]
+						},
+						"twoWaySwitch2": {
+							"pos": [
+								250,
+								250
+							]
+						},
+						"setObjectRotation1": {
+							"pos": [
+								800,
+								100
+							]
+						},
+						"twoWaySwitch3": {
+							"pos": [
+								450,
+								350
+							]
+						},
+						"floatToVec3_1": {
+							"pos": [
+								600,
+								350
+							]
+						},
+						"twoWaySwitch4": {
+							"pos": [
+								450,
+								250
+							]
+						}
+					}
+				},
+				"MAT": {
+					"pos": [
+						-300,
+						550
+					],
+					"nodes": {
+						"meshStandard1": {
+							"pos": [
+								0,
+								0
+							]
+						}
+					}
+				}
+			}
+		},
+		"perspectiveCamera1": {
+			"pos": [
+				-200,
+				100
+			],
+			"nodes": {
+				"events1": {
+					"pos": [
+						-200,
+						50
+					],
+					"nodes": {
+						"cameraOrbitControls1": {
+							"pos": [
+								150,
+								50
+							]
+						}
+					}
+				}
+			}
+		},
+		"positionalAudio1": {
+			"pos": [
+				-50,
+				-50
+			],
+			"nodes": {
+				"envelope1": {
+					"pos": [
+						0,
+						-300
+					]
+				},
+				"AMSynth1": {
+					"pos": [
+						0,
+						-200
+					]
+				},
+				"playInstrument1": {
+					"pos": [
+						0,
+						-100
+					]
+				},
+				"OUT": {
+					"pos": [
+						0,
+						0
+					]
+				},
+				"sampler1": {
+					"pos": [
+						-200,
+						-400
+					]
+				},
+				"envelope2": {
+					"pos": [
+						-200,
+						-500
+					]
+				}
+			}
+		}
+	}
+}

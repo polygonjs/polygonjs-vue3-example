@@ -1,0 +1,42 @@
+{
+	"type": "root",
+	"nodes": {
+		"polarTransform1": {
+			"type": "polarTransform",
+			"params": {
+				"center": [
+					0,
+					0.9,
+					0
+				],
+				"longitude": "$T*50",
+				"latitude": 14.4,
+				"depth": 2.8
+			},
+			"flags": {
+				"display": false
+			}
+		},
+		"pointLight1": {
+			"type": "pointLight",
+			"inputs": [
+				"polarTransform1"
+			],
+			"flags": {
+				"display": true
+			}
+		},
+		"hemisphereLight1": {
+			"type": "hemisphereLight",
+			"params": {
+				"intensity": 0.2
+			},
+			"flags": {
+				"display": true
+			}
+		}
+	},
+	"selection": [
+		"rhino"
+	]
+}

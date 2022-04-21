@@ -1,0 +1,28 @@
+{
+	"type": "geo",
+	"nodes": {
+		"circle1": {
+			"type": "circle",
+			"params": {
+				"radius": 33,
+				"segments": 50,
+				"open": 0
+			}
+		},
+		"oceanPlane1": {
+			"type": "oceanPlane",
+			"params": {
+				"size": 55
+			},
+			"inputs": [
+				"circle1"
+			],
+			"flags": {
+				"display": true
+			}
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}

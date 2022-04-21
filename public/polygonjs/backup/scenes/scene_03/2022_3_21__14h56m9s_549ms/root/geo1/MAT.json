@@ -1,0 +1,12 @@
+{
+	"type": "materialsNetwork",
+	"nodes": {
+		"meshStandard1": {
+			"type": "meshStandard",
+			"params": {
+				"metalness": 0,
+				"roughness": 1
+			}
+		}
+	}
+}

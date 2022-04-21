@@ -1,0 +1,483 @@
+{
+	"type": "actor",
+	"nodes": {
+		"onObjectHover1": {
+			"type": "onObjectHover"
+		},
+		"playInstrumentNote1": {
+			"type": "playInstrumentNote",
+			"params": {
+				"node": "../../../positionalAudio1/OUT",
+				"note": {
+					"overriden_options": {}
+				},
+				"duration": {
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 4,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "triggerTwoWaySwitch1",
+					"output": "triggerIfTrue"
+				},
+				null,
+				{
+					"index": 2,
+					"node": "getObjectAttribute1",
+					"output": "val"
+				}
+			]
+		},
+		"getObjectAttribute1": {
+			"type": "getObjectAttribute",
+			"params": {
+				"attribName": "note",
+				"type": 4
+			},
+			"connection_points": {
+				"in": [
+					{
+						"name": "Object3D",
+						"type": "Object3D",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "string",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"triggerTwoWaySwitch1": {
+			"type": "triggerTwoWaySwitch",
+			"params": {
+				"condition": {
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 2,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onObjectHover1",
+					"output": "trigger"
+				},
+				{
+					"index": 1,
+					"node": "onObjectHover1",
+					"output": "hovered"
+				}
+			]
+		},
+		"twoWaySwitch1": {
+			"type": "twoWaySwitch",
+			"params": {
+				"condition": {
+					"type": "boolean",
+					"default_value": false,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"ifTrue": {
+					"type": "color",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"ifFalse": {
+					"type": "color",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onObjectHover1",
+					"output": "hovered"
+				},
+				{
+					"index": 1,
+					"node": "constant1",
+					"output": "val"
+				},
+				{
+					"index": 2,
+					"node": "constant2",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "condition",
+						"type": "boolean",
+						"isArray": false
+					},
+					{
+						"name": "ifTrue",
+						"type": "color",
+						"isArray": false
+					},
+					{
+						"name": "ifFalse",
+						"type": "color",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "color",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"constant1": {
+			"type": "constant",
+			"params": {
+				"type": 1,
+				"color": [
+					0.2627450980392157,
+					0.37254901960784315,
+					0.47843137254901963
+				]
+			},
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "val",
+						"type": "color",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"constant2": {
+			"type": "constant",
+			"params": {
+				"type": 1,
+				"color": [
+					1,
+					1,
+					1
+				]
+			},
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "val",
+						"type": "color",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"onTick1": {
+			"type": "onTick"
+		},
+		"setObjectMaterialColor1": {
+			"type": "setObjectMaterialColor",
+			"params": {
+				"color": {
+					"overriden_options": {}
+				},
+				"lerp": {
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 4,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onTick1",
+					"output": "trigger"
+				},
+				null,
+				{
+					"index": 2,
+					"node": "twoWaySwitch1",
+					"output": "val"
+				},
+				{
+					"index": 3,
+					"node": "twoWaySwitch2",
+					"output": "val"
+				}
+			]
+		},
+		"twoWaySwitch2": {
+			"type": "twoWaySwitch",
+			"params": {
+				"condition": {
+					"type": "boolean",
+					"default_value": false,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"ifTrue": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.44
+				},
+				"ifFalse": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.02
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onObjectHover1",
+					"output": "hovered"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "condition",
+						"type": "boolean",
+						"isArray": false
+					},
+					{
+						"name": "ifTrue",
+						"type": "float",
+						"isArray": false
+					},
+					{
+						"name": "ifFalse",
+						"type": "float",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"setObjectRotation1": {
+			"type": "setObjectRotation",
+			"params": {
+				"rotation": {
+					"overriden_options": {}
+				},
+				"lerp": {
+					"raw_input": 0.2,
+					"overriden_options": {}
+				},
+				"updateMatrix": {
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 5,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "setObjectMaterialColor1",
+					"output": "trigger"
+				},
+				null,
+				{
+					"index": 2,
+					"node": "floatToVec3_1",
+					"output": "vec3"
+				},
+				{
+					"index": 3,
+					"node": "twoWaySwitch4",
+					"output": "val"
+				}
+			]
+		},
+		"twoWaySwitch3": {
+			"type": "twoWaySwitch",
+			"params": {
+				"condition": {
+					"type": "boolean",
+					"default_value": false,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"ifTrue": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.44
+				},
+				"ifFalse": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.02
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onObjectHover1",
+					"output": "hovered"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "condition",
+						"type": "boolean",
+						"isArray": false
+					},
+					{
+						"name": "ifTrue",
+						"type": "float",
+						"isArray": false
+					},
+					{
+						"name": "ifFalse",
+						"type": "float",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"floatToVec3_1": {
+			"type": "floatToVec3",
+			"params": {
+				"x": {
+					"overriden_options": {}
+				},
+				"y": {
+					"overriden_options": {}
+				},
+				"z": {
+					"overriden_options": {}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "twoWaySwitch3",
+					"output": "val"
+				}
+			]
+		},
+		"twoWaySwitch4": {
+			"type": "twoWaySwitch",
+			"params": {
+				"condition": {
+					"type": "boolean",
+					"default_value": false,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"ifTrue": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.56
+				},
+				"ifFalse": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					},
+					"raw_input": 0.14
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onObjectHover1",
+					"output": "hovered"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "condition",
+						"type": "boolean",
+						"isArray": false
+					},
+					{
+						"name": "ifTrue",
+						"type": "float",
+						"isArray": false
+					},
+					{
+						"name": "ifFalse",
+						"type": "float",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "float",
+						"isArray": false
+					}
+				]
+			}
+		}
+	},
+	"inputs": [
+		"audioNotes1"
+	]
+}

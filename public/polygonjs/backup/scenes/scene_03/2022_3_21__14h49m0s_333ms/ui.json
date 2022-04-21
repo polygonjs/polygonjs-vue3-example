@@ -1,0 +1,102 @@
+{
+	"nodes": {
+		"geo1": {
+			"pos": [
+				-50,
+				-150
+			],
+			"nodes": {
+				"box1": {
+					"pos": [
+						-100,
+						-150
+					]
+				},
+				"transform1": {
+					"pos": [
+						-100,
+						-50
+					]
+				},
+				"copy1": {
+					"pos": [
+						-100,
+						150
+					]
+				},
+				"audioNotes1": {
+					"pos": [
+						-100,
+						300
+					]
+				},
+				"actor1": {
+					"pos": [
+						-100,
+						450
+					],
+					"nodes": {
+						"onTick1": {
+							"pos": [
+								-100,
+								0
+							]
+						},
+						"setObjectPosition1": {
+							"pos": [
+								400,
+								0
+							]
+						},
+						"floatToVec3_1": {
+							"pos": [
+								200,
+								100
+							]
+						},
+						"sin1": {
+							"pos": [
+								100,
+								100
+							]
+						}
+					}
+				}
+			}
+		},
+		"hemisphereLight1": {
+			"pos": [
+				150,
+				100
+			]
+		},
+		"perspectiveCamera1": {
+			"pos": [
+				-200,
+				100
+			],
+			"nodes": {
+				"events1": {
+					"pos": [
+						-200,
+						50
+					],
+					"nodes": {
+						"cameraOrbitControls1": {
+							"pos": [
+								150,
+								50
+							]
+						}
+					}
+				}
+			}
+		},
+		"spotLight1": {
+			"pos": [
+				150,
+				200
+			]
+		}
+	}
+}

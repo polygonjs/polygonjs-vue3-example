@@ -1,0 +1,308 @@
+{
+	"type": "actor",
+	"nodes": {
+		"setObjectPosition1": {
+			"type": "setObjectPosition",
+			"params": {
+				"position": {
+					"overriden_options": {}
+				},
+				"lerp": {
+					"overriden_options": {}
+				},
+				"updateMatrix": {
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 5,
+			"inputs": [
+				null,
+				null,
+				{
+					"index": 2,
+					"node": "floatToVec3_1",
+					"output": "vec3"
+				}
+			]
+		},
+		"floatToVec3_1": {
+			"type": "floatToVec3",
+			"params": {
+				"x": {
+					"overriden_options": {}
+				},
+				"y": {
+					"overriden_options": {}
+				},
+				"z": {
+					"overriden_options": {}
+				}
+			},
+			"inputs": [
+				null,
+				{
+					"index": 1,
+					"node": "sin1",
+					"output": "sin"
+				}
+			]
+		},
+		"sin1": {
+			"type": "sin",
+			"params": {
+				"angle": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": true
+					}
+				}
+			},
+			"connection_points": {
+				"in": [
+					{
+						"name": "angle",
+						"type": "float",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "sin",
+						"type": "float",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"onObjectHover1": {
+			"type": "onObjectHover"
+		},
+		"playInstrumentNote1": {
+			"type": "playInstrumentNote",
+			"params": {
+				"note": {
+					"overriden_options": {}
+				},
+				"duration": {
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 4,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "triggerTwoWaySwitch1",
+					"output": "triggerIfTrue"
+				},
+				null,
+				{
+					"index": 2,
+					"node": "getObjectAttribute1",
+					"output": "val"
+				}
+			]
+		},
+		"getObjectAttribute1": {
+			"type": "getObjectAttribute",
+			"params": {
+				"attribName": "note",
+				"type": 4
+			},
+			"connection_points": {
+				"in": [
+					{
+						"name": "Object3D",
+						"type": "Object3D",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "string",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"triggerTwoWaySwitch1": {
+			"type": "triggerTwoWaySwitch",
+			"params": {
+				"condition": {
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 2,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onObjectHover1",
+					"output": "trigger"
+				},
+				{
+					"index": 1,
+					"node": "onObjectHover1",
+					"output": "hovered"
+				}
+			]
+		},
+		"setMaterialColor1": {
+			"type": "setMaterialColor",
+			"params": {
+				"color": {
+					"overriden_options": {}
+				},
+				"lerp": {
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 4,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onTick1",
+					"output": "trigger"
+				},
+				null,
+				{
+					"index": 2,
+					"node": "twoWaySwitch1",
+					"output": "val"
+				}
+			]
+		},
+		"twoWaySwitch1": {
+			"type": "twoWaySwitch",
+			"params": {
+				"condition": {
+					"type": "boolean",
+					"default_value": false,
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"ifTrue": {
+					"type": "color",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				},
+				"ifFalse": {
+					"type": "color",
+					"default_value": [
+						0,
+						0,
+						0
+					],
+					"options": {
+						"spare": true,
+						"editable": false
+					}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onObjectHover1",
+					"output": "hovered"
+				},
+				{
+					"index": 1,
+					"node": "constant1",
+					"output": "val"
+				},
+				{
+					"index": 2,
+					"node": "constant2",
+					"output": "val"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "condition",
+						"type": "boolean",
+						"isArray": false
+					},
+					{
+						"name": "ifTrue",
+						"type": "color",
+						"isArray": false
+					},
+					{
+						"name": "ifFalse",
+						"type": "color",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "val",
+						"type": "color",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"constant1": {
+			"type": "constant",
+			"params": {
+				"type": 1,
+				"color": [
+					0.5254901960784314,
+					0.7254901960784313,
+					0.9176470588235294
+				]
+			},
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "val",
+						"type": "color",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"constant2": {
+			"type": "constant",
+			"params": {
+				"type": 1,
+				"color": [
+					1,
+					1,
+					1
+				]
+			},
+			"connection_points": {
+				"in": [],
+				"out": [
+					{
+						"name": "val",
+						"type": "color",
+						"isArray": false
+					}
+				]
+			}
+		},
+		"onTick1": {
+			"type": "onTick"
+		}
+	},
+	"inputs": [
+		"audioNotes1"
+	],
+	"flags": {
+		"bypass": true
+	}
+}

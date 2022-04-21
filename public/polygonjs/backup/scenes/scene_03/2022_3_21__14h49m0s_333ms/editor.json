@@ -1,0 +1,112 @@
+{
+	"multiple_panel": {
+		"split_ratio": 0.5,
+		"split_panel0": {
+			"split_ratio": 0.5,
+			"split_panel0": {
+				"panelTypes": [
+					"viewer"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"camera": "/perspectiveCamera1",
+					"linkIndex": 1
+				}
+			},
+			"split_panel1": {
+				"panelTypes": [
+					"params"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"active_folder": null,
+					"linkIndex": 1
+				}
+			},
+			"split_mode": "vertical"
+		},
+		"split_panel1": {
+			"panelTypes": [
+				"network",
+				"params",
+				"viewer"
+			],
+			"currentPanelIndex": 0,
+			"panel_data": {
+				"camera": {
+					"position": {
+						"x": -80,
+						"y": -106
+					},
+					"zoom": 0.5
+				},
+				"history": {
+					"32": {
+						"position": {
+							"x": -80,
+							"y": -106
+						},
+						"zoom": 0.5
+					}
+				},
+				"linkIndex": 1
+			}
+		},
+		"split_mode": "horizontal"
+	},
+	"currentNodes": [
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1"
+	],
+	"navigationHistory": {
+		"nodePaths": {
+			"1": [
+				"/geo1"
+			],
+			"2": [
+				"/geo1"
+			],
+			"3": [
+				"/geo1"
+			],
+			"4": [
+				"/geo1"
+			],
+			"5": [
+				"/geo1"
+			],
+			"6": [
+				"/geo1"
+			],
+			"7": [
+				"/geo1"
+			],
+			"8": [
+				"/geo1"
+			]
+		},
+		"index": {
+			"1": 0,
+			"2": 0,
+			"3": 0,
+			"4": 0,
+			"5": 0,
+			"6": 0,
+			"7": 0,
+			"8": 0
+		}
+	},
+	"fullscreenPanelId": null,
+	"saveOptions": {
+		"createExport": true,
+		"compressJs": true,
+		"publishToIntegrations": false
+	},
+	"paramsModal": []
+}

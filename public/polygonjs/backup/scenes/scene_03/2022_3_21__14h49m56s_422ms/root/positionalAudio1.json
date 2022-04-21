@@ -1,0 +1,47 @@
+{
+	"type": "positionalAudio",
+	"nodes": {
+		"envelope1": {
+			"type": "envelope"
+		},
+		"AMSynth1": {
+			"type": "AMSynth",
+			"inputs": [
+				"envelope1"
+			]
+		},
+		"playInstrument1": {
+			"type": "playInstrument",
+			"inputs": [
+				"sampler1"
+			]
+		},
+		"OUT": {
+			"type": "null",
+			"inputs": [
+				"playInstrument1"
+			]
+		},
+		"sampler1": {
+			"type": "sampler",
+			"params": {
+				"baseUrl": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/audio/resources/tonejs.github.io/samples"
+			},
+			"inputs": [
+				"envelope2"
+			]
+		},
+		"envelope2": {
+			"type": "envelope"
+		}
+	},
+	"params": {
+		"audioNode": "OUT"
+	},
+	"inputs": [
+		"geo1"
+	],
+	"flags": {
+		"display": true
+	}
+}

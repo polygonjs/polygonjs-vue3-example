@@ -1,0 +1,179 @@
+{
+	"multiple_panel": {
+		"split_ratio": 0.5,
+		"split_panel0": {
+			"split_ratio": 0.5,
+			"split_panel0": {
+				"panelTypes": [
+					"viewer"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"camera": "/perspectiveCamera1",
+					"linkIndex": 1
+				}
+			},
+			"split_panel1": {
+				"panelTypes": [
+					"params"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"active_folder": 131,
+					"linkIndex": 1
+				}
+			},
+			"split_mode": "vertical"
+		},
+		"split_panel1": {
+			"panelTypes": [
+				"network",
+				"params",
+				"viewer"
+			],
+			"currentPanelIndex": 0,
+			"panel_data": {
+				"camera": {
+					"position": {
+						"x": 100,
+						"y": -450
+					},
+					"zoom": 0.5
+				},
+				"history": {
+					"2": {
+						"position": {
+							"x": 59,
+							"y": -105
+						},
+						"zoom": 0.5
+					},
+					"32": {
+						"position": {
+							"x": -80,
+							"y": -106
+						},
+						"zoom": 0.5
+					},
+					"98": {
+						"position": {
+							"x": -98,
+							"y": -130
+						},
+						"zoom": 0.5
+					},
+					"125": {
+						"position": {
+							"x": 100,
+							"y": -450
+						},
+						"zoom": 0.5
+					},
+					"196": {
+						"position": {
+							"x": -23.291925465838503,
+							"y": 182.6086956521739
+						},
+						"zoom": 0.6440000000000001
+					},
+					"247": {
+						"position": {
+							"x": -249.2562941114505,
+							"y": -79.16675445064783
+						},
+						"zoom": 0.8250000000000003
+					},
+					"380": {
+						"position": {
+							"x": -266,
+							"y": 4
+						},
+						"zoom": 0.561
+					},
+					"615": {
+						"position": {
+							"x": -23.291925465838503,
+							"y": 182.6086956521739
+						},
+						"zoom": 0.6440000000000001
+					}
+				},
+				"linkIndex": 1
+			}
+		},
+		"split_mode": "horizontal"
+	},
+	"currentNodes": [
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1"
+	],
+	"navigationHistory": {
+		"nodePaths": {
+			"1": [
+				"/geo1",
+				"/geo1/actor1",
+				"/geo1",
+				"/geo1/MAT",
+				"/geo1",
+				"/geo1/actor1",
+				"/geo1",
+				"/",
+				"/positionalAudio1",
+				"/",
+				"/positionalAudio1",
+				"/",
+				"/positionalAudio1",
+				"/",
+				"/geo1",
+				"/",
+				"/positionalAudio1",
+				"/",
+				"/geo1"
+			],
+			"2": [
+				"/geo1"
+			],
+			"3": [
+				"/geo1"
+			],
+			"4": [
+				"/geo1"
+			],
+			"5": [
+				"/geo1"
+			],
+			"6": [
+				"/geo1"
+			],
+			"7": [
+				"/geo1"
+			],
+			"8": [
+				"/geo1"
+			]
+		},
+		"index": {
+			"1": 18,
+			"2": 0,
+			"3": 0,
+			"4": 0,
+			"5": 0,
+			"6": 0,
+			"7": 0,
+			"8": 0
+		}
+	},
+	"fullscreenPanelId": null,
+	"saveOptions": {
+		"createExport": true,
+		"compressJs": true,
+		"publishToIntegrations": false
+	},
+	"paramsModal": []
+}

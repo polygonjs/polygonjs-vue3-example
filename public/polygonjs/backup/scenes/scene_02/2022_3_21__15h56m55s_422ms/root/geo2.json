@@ -1,0 +1,41 @@
+{
+	"type": "geo",
+	"nodes": {
+		"sphere1": {
+			"type": "sphere",
+			"params": {
+				"radius": 0.14
+			}
+		},
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshBasic1"
+			},
+			"inputs": [
+				"sphere1"
+			]
+		},
+		"objectProperties1": {
+			"type": "objectProperties",
+			"params": {
+				"tcastShadow": 1,
+				"castShadow": 0,
+				"treceiveShadow": 1,
+				"receiveShadow": 0
+			},
+			"inputs": [
+				"material1"
+			],
+			"flags": {
+				"display": true
+			}
+		}
+	},
+	"inputs": [
+		"pointLight1"
+	],
+	"flags": {
+		"display": true
+	}
+}

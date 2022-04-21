@@ -1,0 +1,50 @@
+{
+	"type": "geo",
+	"nodes": {
+		"copy1": {
+			"type": "copy"
+		},
+		"plane1": {
+			"type": "plane",
+			"params": {
+				"size": [
+					512,
+					444
+				],
+				"useSegmentsCount": 1,
+				"direction": [
+					0,
+					0,
+					1
+				]
+			}
+		},
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshStandard1"
+			},
+			"inputs": [
+				"transform1"
+			],
+			"flags": {
+				"display": true
+			}
+		},
+		"transform1": {
+			"type": "transform",
+			"params": {
+				"scale": 0.004
+			},
+			"inputs": [
+				"plane1"
+			]
+		}
+	},
+	"flags": {
+		"display": true
+	},
+	"selection": [
+		"COP"
+	]
+}

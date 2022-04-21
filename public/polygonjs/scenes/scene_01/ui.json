@@ -1,0 +1,124 @@
+{
+	"nodes": {
+		"hemisphereLight1": {
+			"pos": [
+				150,
+				100
+			]
+		},
+		"spotLight1": {
+			"pos": [
+				150,
+				200
+			]
+		},
+		"geo1": {
+			"pos": [
+				-50,
+				-150
+			],
+			"nodes": {
+				"copy1": {
+					"pos": [
+						-150,
+						-100
+					]
+				},
+				"plane1": {
+					"pos": [
+						-150,
+						-400
+					]
+				},
+				"material1": {
+					"pos": [
+						-150,
+						-200
+					]
+				},
+				"transform1": {
+					"pos": [
+						-150,
+						-300
+					]
+				},
+				"COP": {
+					"pos": [
+						-450,
+						0
+					],
+					"nodes": {
+						"image_VUE": {
+							"pos": [
+								-400,
+								50
+							]
+						}
+					}
+				},
+				"MAT": {
+					"pos": [
+						-450,
+						-100
+					],
+					"nodes": {
+						"meshStandard1": {
+							"pos": [
+								0,
+								0
+							]
+						}
+					}
+				},
+				"transform2": {
+					"pos": [
+						-150,
+						100
+					]
+				}
+			}
+		},
+		"perspectiveCamera1": {
+			"pos": [
+				-200,
+				100
+			],
+			"nodes": {
+				"events1": {
+					"pos": [
+						-200,
+						50
+					],
+					"nodes": {
+						"cameraOrbitControls1": {
+							"pos": [
+								150,
+								50
+							]
+						}
+					}
+				}
+			}
+		},
+		"ocean": {
+			"pos": [
+				-50,
+				-50
+			],
+			"nodes": {
+				"circle1": {
+					"pos": [
+						100,
+						-50
+					]
+				},
+				"oceanPlane1": {
+					"pos": [
+						100,
+						100
+					]
+				}
+			}
+		}
+	}
+}

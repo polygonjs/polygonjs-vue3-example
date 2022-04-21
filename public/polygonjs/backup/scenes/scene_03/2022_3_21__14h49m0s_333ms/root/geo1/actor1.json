@@ -1,0 +1,98 @@
+{
+	"type": "actor",
+	"nodes": {
+		"onTick1": {
+			"type": "onTick"
+		},
+		"setObjectPosition1": {
+			"type": "setObjectPosition",
+			"params": {
+				"position": {
+					"overriden_options": {}
+				},
+				"lerp": {
+					"overriden_options": {}
+				},
+				"updateMatrix": {
+					"overriden_options": {}
+				}
+			},
+			"maxInputsCount": 5,
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onTick1",
+					"output": "trigger"
+				},
+				null,
+				{
+					"index": 2,
+					"node": "floatToVec3_1",
+					"output": "vec3"
+				}
+			]
+		},
+		"floatToVec3_1": {
+			"type": "floatToVec3",
+			"params": {
+				"x": {
+					"overriden_options": {}
+				},
+				"y": {
+					"overriden_options": {}
+				},
+				"z": {
+					"overriden_options": {}
+				}
+			},
+			"inputs": [
+				null,
+				{
+					"index": 1,
+					"node": "sin1",
+					"output": "sin"
+				}
+			]
+		},
+		"sin1": {
+			"type": "sin",
+			"params": {
+				"angle": {
+					"type": "float",
+					"default_value": 0,
+					"options": {
+						"spare": true,
+						"editable": false
+					},
+					"overriden_options": {}
+				}
+			},
+			"inputs": [
+				{
+					"index": 0,
+					"node": "onTick1",
+					"output": "time"
+				}
+			],
+			"connection_points": {
+				"in": [
+					{
+						"name": "angle",
+						"type": "float",
+						"isArray": false
+					}
+				],
+				"out": [
+					{
+						"name": "sin",
+						"type": "float",
+						"isArray": false
+					}
+				]
+			}
+		}
+	},
+	"inputs": [
+		"audioNotes1"
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"type": "copNetwork",
+	"nodes": {
+		"image1": {
+			"type": "image",
+			"params": {
+				"url": "tex/ballroom_2k.exr?timestamp=1650548296298"
+			}
+		},
+		"envMap1": {
+			"type": "envMap",
+			"inputs": [
+				"image1"
+			]
+		}
+	}
+}

@@ -1,0 +1,256 @@
+{
+	"multiple_panel": {
+		"split_ratio": 0.5,
+		"split_panel0": {
+			"split_ratio": 0.4848837209302326,
+			"split_panel0": {
+				"panelTypes": [
+					"viewer"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"camera": "/perspectiveCamera1",
+					"linkIndex": 1
+				}
+			},
+			"split_panel1": {
+				"panelTypes": [
+					"params"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"active_folder": 813,
+					"linkIndex": 1
+				}
+			},
+			"split_mode": "vertical"
+		},
+		"split_panel1": {
+			"panelTypes": [
+				"network",
+				"params",
+				"viewer"
+			],
+			"currentPanelIndex": 0,
+			"panel_data": {
+				"camera": {
+					"position": {
+						"x": -242.8684627575277,
+						"y": -590.7290015847859
+					},
+					"zoom": 0.6310000000000001
+				},
+				"history": {
+					"2": {
+						"position": {
+							"x": -88.838021521616,
+							"y": -28.39814989616764
+						},
+						"zoom": 0.5885555555555556
+					},
+					"32": {
+						"position": {
+							"x": -26,
+							"y": -70
+						},
+						"zoom": 0.546
+					},
+					"74": {
+						"position": {
+							"x": 200,
+							"y": -50
+						},
+						"zoom": 0.5885555555555556
+					},
+					"203": {
+						"position": {
+							"x": -242.8684627575277,
+							"y": -590.7290015847859
+						},
+						"zoom": 0.6310000000000001
+					},
+					"244": {
+						"position": {
+							"x": 100,
+							"y": -150
+						},
+						"zoom": 0.6310000000000001
+					},
+					"406": {
+						"position": {
+							"x": -150,
+							"y": -50
+						},
+						"zoom": 0.5885555555555556
+					},
+					"458": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.5555555555555556
+					},
+					"482": {
+						"position": {
+							"x": -148.81141045958793,
+							"y": -237.3217115689382
+						},
+						"zoom": 0.6310000000000001
+					},
+					"485": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.6310000000000001
+					},
+					"616": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.5885555555555556
+					},
+					"664": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.6310000000000001
+					},
+					"685": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.6310000000000001
+					},
+					"806": {
+						"position": {
+							"x": 50,
+							"y": 0
+						},
+						"zoom": 0.6310000000000001
+					},
+					"858": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.5885555555555556
+					},
+					"933": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.5885555555555556
+					}
+				},
+				"linkIndex": 1
+			}
+		},
+		"split_mode": "horizontal"
+	},
+	"currentNodes": [
+		"/rhino",
+		"/rhino",
+		"/rhino",
+		"/rhino",
+		"/rhino",
+		"/rhino",
+		"/rhino",
+		"/rhino"
+	],
+	"navigationHistory": {
+		"nodePaths": {
+			"1": [
+				"/rhino",
+				"/",
+				"/floor",
+				"/",
+				"/rhino",
+				"/rhino/MAT",
+				"/rhino",
+				"/",
+				"/COP",
+				"/",
+				"/rhino",
+				"/rhino/MAT",
+				"/rhino/MAT/meshPhysicalBuilder1",
+				"/rhino/MAT",
+				"/rhino",
+				"/rhino/MAT",
+				"/rhino",
+				"/",
+				"/geo2",
+				"/geo2/MAT",
+				"/geo2",
+				"/",
+				"/geo2",
+				"/",
+				"/rhino",
+				"/",
+				"/rhino",
+				"/",
+				"/perspectiveCamera1",
+				"/perspectiveCamera1/events1",
+				"/perspectiveCamera1",
+				"/",
+				"/rhino",
+				"/rhino/MAT",
+				"/rhino/MAT/meshPhysicalBuilder1",
+				"/rhino/MAT",
+				"/rhino",
+				"/rhino/MAT",
+				"/rhino",
+				"/rhino/MAT",
+				"/rhino/MAT/meshLambertBuilder_INSTANCES",
+				"/rhino/MAT",
+				"/rhino/MAT/meshPhysicalBuilder_INSTANCES",
+				"/rhino/MAT",
+				"/rhino",
+				"/rhino/MAT",
+				"/rhino"
+			],
+			"2": [
+				"/rhino"
+			],
+			"3": [
+				"/rhino"
+			],
+			"4": [
+				"/rhino"
+			],
+			"5": [
+				"/rhino"
+			],
+			"6": [
+				"/rhino"
+			],
+			"7": [
+				"/rhino"
+			],
+			"8": [
+				"/rhino"
+			]
+		},
+		"index": {
+			"1": 46,
+			"2": 0,
+			"3": 0,
+			"4": 0,
+			"5": 0,
+			"6": 0,
+			"7": 0,
+			"8": 0
+		}
+	},
+	"fullscreenPanelId": null,
+	"saveOptions": {
+		"createExport": true,
+		"compressJs": true,
+		"publishToIntegrations": false
+	},
+	"paramsModal": []
+}

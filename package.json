@@ -1,0 +1,24 @@
+{
+  "name": "polygonjs_with_vue3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "polygon": "polygonjs-editor"
+  },
+  "dependencies": {
+    "@polygonjs/vue3": "^1.1.252",
+    "core-js": "^3.8.3",
+    "polygonjs-editor": "^1.1.252-1",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "typescript": "~4.5.5"
+  }
+}

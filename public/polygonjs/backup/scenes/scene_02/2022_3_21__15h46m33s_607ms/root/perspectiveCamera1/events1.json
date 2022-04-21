@@ -1,0 +1,22 @@
+{
+	"type": "eventsNetwork",
+	"nodes": {
+		"cameraOrbitControls1": {
+			"type": "cameraOrbitControls",
+			"params": {
+				"allowPan": 0,
+				"minDistance": 1,
+				"maxDistance": 5,
+				"polarAngleRange": [
+					"$PI*0.1",
+					"$PI*0.55"
+				],
+				"target": [
+					0,
+					1,
+					0
+				]
+			}
+		}
+	}
+}

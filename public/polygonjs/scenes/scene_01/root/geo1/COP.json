@@ -1,0 +1,14 @@
+{
+	"type": "copNetwork",
+	"nodes": {
+		"image_VUE": {
+			"type": "image",
+			"params": {
+				"url": "tex/vue_logo.png?timestamp=1650546697216",
+				"twrap": 1,
+				"tflipY": 1,
+				"flipY": 1
+			}
+		}
+	}
+}
