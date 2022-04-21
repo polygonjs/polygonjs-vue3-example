@@ -2,24 +2,21 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
 
-    
-
-<div class="wrapper">
-  <div class="box text text-right">In this page, we show how to load multiple scenes together</div>
-  <div class="box"><Scene01/></div>
-  <div class="box"><Scene02/></div>
-  <div class="box text text-left">
-    And you can also visit each scene separately, using the links at the top of the page, or here: 
-  <nav>
-    <router-link to="/scene_01">Scene 01</router-link> |
-    <router-link to="/scene_02">Scene 02</router-link> |
-    <router-link to="/scene_03">Scene 03</router-link>
-  </nav>
-  </div>
-  <div class="box text text-right">And you can even play music on the piano</div>
-  <div class="box"><Scene03/></div>
-</div>
-
+    <div class="wrapper">
+      <div class="box text text-right">In this page, we show how to load multiple scenes together</div>
+      <div class="box"><Scene01/></div>
+      <div class="box"><Scene02/></div>
+      <div class="box text text-left">
+        And you can also visit each scene separately, using the links at the top of the page, or here: 
+      <nav>
+        <router-link to="/scene_01">Scene 01</router-link> |
+        <router-link to="/scene_02">Scene 02</router-link> |
+        <router-link to="/scene_03">Scene 03</router-link>
+      </nav>
+      </div>
+      <div class="box text text-right">And you can even play music on the piano</div>
+      <div class="box"><Scene03/></div>
+    </div>
 
   </div>
 </template>
@@ -61,8 +58,6 @@ a {
 }
 
 /* grid */
-
-
 .wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
