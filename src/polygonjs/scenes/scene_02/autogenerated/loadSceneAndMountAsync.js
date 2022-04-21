@@ -1,4 +1,4 @@
-import {loadSceneData_scene_02} from './loadSceneData.js?t=1650553015118';
+import {loadSceneData_scene_02} from './loadSceneData.js?t=1650557704767';
 
 export const loadSceneAndMountAsync_scene_02 = async function (options) {
 	const {
@@ -16,7 +16,7 @@ export const loadSceneAndMountAsync_scene_02 = async function (options) {
 
 	const moduleNames = loadModules ? ["EXRLoader", "GLTFLoader"] : [];
 	const modulePromises = moduleNames.map((moduleName) => import('./modules/' + moduleName + (options.moduleImportSuffix || '')));
-	const promises = [import('./loadSceneFromSceneData.js?t=1650553015118'), loadSceneData_scene_02({onProgress, sceneDataRoot}), ...modulePromises];
+	const promises = [import('./loadSceneFromSceneData.js?t=1650557704767'), loadSceneData_scene_02({onProgress, sceneDataRoot}), ...modulePromises];
 	const results = await Promise.all(promises);
 	const {Poly, loadSceneFromSceneData_scene_02} = results[0];
 	const sceneData = results[1];

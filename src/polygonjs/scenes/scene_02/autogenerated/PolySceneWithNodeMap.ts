@@ -59,10 +59,6 @@ export class PolySceneWithNodeMap_scene_02 extends PolyScene {
 	node(path: '/rhino/material1'): MaterialSopNode;
 	node(path: '/rhino/fileGLTF1'): FileGLTFSopNode;
 	node(path: '/rhino/hierarchy1'): HierarchySopNode;
-	node(path: '/rhino/MAT'): MaterialsNetworkSopNode;
-	node(path: '/rhino/MAT/meshPhysicalBuilder1'): MeshPhysicalBuilderMatNode;
-	node(path: '/rhino/MAT/meshLambertBuilder_INSTANCES'): MeshLambertBuilderMatNode;
-	node(path: '/rhino/MAT/meshPhysicalBuilder_INSTANCES'): MeshPhysicalBuilderMatNode;
 	node(path: '/rhino/scatter1'): ScatterSopNode;
 	node(path: '/rhino/point1'): PointSopNode;
 	node(path: '/rhino/fuse1'): FuseSopNode;
@@ -72,6 +68,10 @@ export class PolySceneWithNodeMap_scene_02 extends PolyScene {
 	node(path: '/rhino/transform1'): TransformSopNode;
 	node(path: '/rhino/merge1'): MergeSopNode;
 	node(path: '/rhino/OUT'): NullSopNode;
+	node(path: '/rhino/MAT'): MaterialsNetworkSopNode;
+	node(path: '/rhino/MAT/meshPhysicalBuilder1'): MeshPhysicalBuilderMatNode;
+	node(path: '/rhino/MAT/meshLambertBuilder_INSTANCES'): MeshLambertBuilderMatNode;
+	node(path: '/rhino/MAT/meshPhysicalBuilder_INSTANCES'): MeshPhysicalBuilderMatNode;
 	node(path: string):any /* we need any for now as otherwise an error occurs when adding plugins to the overloaded methods */ {
 		return super.node(path);
 	}

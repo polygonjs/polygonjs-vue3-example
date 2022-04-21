@@ -60,7 +60,7 @@
 		"fuse1": {
 			"type": "fuse",
 			"params": {
-				"dist": 0.09
+				"dist": 0.2
 			},
 			"inputs": [
 				"point1"
@@ -89,11 +89,11 @@
 			"type": "roundedBox",
 			"params": {
 				"size": [
-					"0.95*ch(\"../point1/m\")",
-					"0.95*ch(\"../point1/m\")",
-					"0.95*ch(\"../point1/m\")"
+					"0.95*ch(\"../fuse1/dist\")",
+					"0.95*ch(\"../fuse1/dist\")",
+					"0.95*ch(\"../fuse1/dist\")"
 				],
-				"bevel": "0.05*ch(\"../point1/m\")"
+				"bevel": "0.05*ch(\"../fuse1/dist\")"
 			}
 		},
 		"transform1": {
