@@ -25,7 +25,7 @@
 		"sampler1": {
 			"type": "sampler",
 			"params": {
-				"baseUrl": "https://raw.githubusercontent.com/polygonjs/polygonjs-assets/master/audio/resources/tonejs.github.io/samples"
+				"baseUrl": "/audio/samples"
 			},
 			"inputs": [
 				"envelope2"

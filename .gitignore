@@ -21,3 +21,8 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+
+public/polygonjs/backup
+public/polygonjs/build
+public/polygonjs/js

@@ -1,4 +1,4 @@
-import {loadSceneData_scene_03} from './loadSceneData.js?t=1650549369360';
+import {loadSceneData_scene_03} from './loadSceneData.js?t=1650557422370';
 
 export const loadSceneAndMountAsync_scene_03 = async function (options) {
 	const {
@@ -15,7 +15,7 @@ export const loadSceneAndMountAsync_scene_03 = async function (options) {
 	const loadModules = options.loadModules != null ? options.loadModules : true;
 
 	const moduleNames = loadModules ? [] : [];
-	const promises = [import('./loadSceneFromSceneData.js?t=1650549369360'), loadSceneData_scene_03({onProgress, sceneDataRoot})];
+	const promises = [import('./loadSceneFromSceneData.js?t=1650557422370'), loadSceneData_scene_03({onProgress, sceneDataRoot})];
 	const results = await Promise.all(promises);
 	const {Poly, loadSceneFromSceneData_scene_03} = results[0];
 	const sceneData = results[1];

@@ -19,7 +19,7 @@
 				],
 				"currentPanelIndex": 0,
 				"panel_data": {
-					"active_folder": 131,
+					"active_folder": null,
 					"linkIndex": 1
 				}
 			},
@@ -35,10 +35,10 @@
 			"panel_data": {
 				"camera": {
 					"position": {
-						"x": -349.07075903498395,
-						"y": -62.384236896707925
+						"x": -23.291925465838503,
+						"y": 182.6086956521739
 					},
-					"zoom": 0.6261300000000003
+					"zoom": 0.6440000000000001
 				},
 				"history": {
 					"2": {
@@ -118,7 +118,7 @@
 		"split_mode": "horizontal"
 	},
 	"currentNodes": [
-		"/geo1/actor1",
+		"/positionalAudio1",
 		"/geo1",
 		"/geo1",
 		"/geo1",
@@ -155,7 +155,10 @@
 				"/geo1",
 				"/geo1/actor1",
 				"/geo1",
-				"/geo1/actor1"
+				"/geo1/actor1",
+				"/geo1",
+				"/",
+				"/positionalAudio1"
 			],
 			"2": [
 				"/geo1"
@@ -180,7 +183,7 @@
 			]
 		},
 		"index": {
-			"1": 25,
+			"1": 28,
 			"2": 0,
 			"3": 0,
 			"4": 0,
