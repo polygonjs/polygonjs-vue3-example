@@ -6,7 +6,8 @@ import {AllExpressionsRegister} from '@polygonjs/polygonjs/dist/src/engine/poly/
 import {requiredImports_scene_03} from './requiredImports';
 
 const loadSceneFromSceneData_scene_03 = async function (options) {
-	const {domElement, sceneData, onProgress, autoPlay, assetsRoot, libsRootPrefix, printWarnings} = options;
+	const {domElement, sceneData, onProgress, autoPlay, createViewer, assetsRoot, libsRootPrefix, printWarnings} =
+		options;
 	const runRegister = options.runRegister != null ? options.runRegister : true;
 
 	if (runRegister) {
@@ -46,6 +47,7 @@ const loadSceneFromSceneData_scene_03 = async function (options) {
 		sceneData,
 		onProgress,
 		autoPlay,
+		createViewer,
 	});
 	return {
 		scene: scene,

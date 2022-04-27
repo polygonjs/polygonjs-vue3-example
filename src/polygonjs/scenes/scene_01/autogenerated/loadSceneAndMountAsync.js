@@ -1,49 +1,8 @@
-import {loadSceneData_scene_01} from './loadSceneData.js?t=1650548211416';
+import {loadSceneAsync_scene_01} from './loadSceneAsync.js';
 
-export const loadSceneAndMountAsync_scene_01 = async function (options) {
-	const {
-		onProgress,
-		domElement,
-		configureSceneData,
-		autoPlay,
-		sceneDataRoot,
-		assetsRoot,
-		libsRootPrefix,
-		printWarnings
-	} = options;
-	const runRegister = options.runRegister != null ? options.runRegister : true;
-	const loadModules = options.loadModules != null ? options.loadModules : true;
-
-	const moduleNames = loadModules ? [] : [];
-	const promises = [import('./loadSceneFromSceneData.js?t=1650548211416'), loadSceneData_scene_01({onProgress, sceneDataRoot})];
-	const results = await Promise.all(promises);
-	const {Poly, loadSceneFromSceneData_scene_01} = results[0];
-	const sceneData = results[1];
-	if(configureSceneData){
-		configureSceneData(sceneData);
+export const loadSceneAndMountAsync_scene_01 = async function (options={}) {
+	if(options && options.createViewer == null){
+		options.createViewer = true;
 	}
-
-	const loadedModules = [];
-	for (let i = 2; i < results.length; i++) {
-		loadedModules.push(results[i]);
-	}
-	// register modules
-	let i = 0;
-	for (let moduleName of moduleNames) {
-		const moduleNameContainer = moduleName + 'Module';
-		Poly.registerModule(loadedModules[i][moduleNameContainer]);
-		i++;
-	}
-
-	const loadedData = await loadSceneFromSceneData_scene_01({
-		onProgress,
-		sceneData,
-		domElement,
-		runRegister,
-		autoPlay,
-		assetsRoot,
-		libsRootPrefix,
-		printWarnings
-	});
-	return loadedData;
+	return loadSceneAsync_scene_01(options);
 };

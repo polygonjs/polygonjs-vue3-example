@@ -1,7 +1,7 @@
 
 // cop
 import {EnvMapCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/EnvMap';
-import {ImageCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/Image';
+import {ImageEXRCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/ImageEXR';
 // event
 import {CameraOrbitControlsEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/CameraOrbitControls';
 // mat
@@ -39,7 +39,7 @@ import {TransformSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/T
 export const requiredImports_scene_02 = {
 	nodes: [
 		EnvMapCopNode,
-		ImageCopNode,
+		ImageEXRCopNode,
 		CameraOrbitControlsEventNode,
 		MeshBasicMatNode,
 		MeshLambertBuilderMatNode,

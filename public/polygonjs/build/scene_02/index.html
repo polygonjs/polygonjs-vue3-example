@@ -105,7 +105,7 @@
 		</style>
 
 		<script id="load-scene-scene_02" type="module">
-			import {loadSceneAndMountAsync_scene_02} from './polygonjs/js/scene_02/loadSceneAndMountAsync.js?t=1650557704767';
+			import {loadSceneAndMountAsync_scene_02} from './polygonjs/js/scene_02/loadSceneAndMountAsync.js';
 
 			const container = document.getElementById('polygonjs-progress-bar-container');
 			const barElement = document.getElementById('polygonjs-progress-bar');
@@ -151,7 +151,7 @@
 					autoPlay: true,
 					onProgress,
 					domElement,
-					moduleImportSuffix: '.js?' + 'polygon=1_1_252',
+					moduleImportSuffix: '.js',
 				});
 				if (window.POLY && window.POLY.onSceneReady_scene_02) {
 					window.POLY.onSceneReady_scene_02(loadedData);
@@ -163,66 +163,58 @@
 		<link rel="preload" href="models/rhino.glb?timestamp=1650547623667" as="fetch" crossorigin />
 		<link
 			rel="preload"
-			href="polygonjs/js/scene_02/loadSceneAndMountAsync.js?t=1650557704767"
+			href="polygonjs/js/scene_02/loadSceneAndMountAsync.js?t=1651080367497"
 			as="script"
 			crossorigin
 		/>
-		<link rel="preload" href="polygonjs/js/scene_02/modules/EXRLoader.js?polygon=1_1_252" as="script" crossorigin />
+		<link rel="preload" href="polygonjs/js/scene_02/loadSceneAsync.js?t=1651080367497" as="script" crossorigin />
+		<link rel="preload" href="polygonjs/js/scene_02/chunk-QSUBRRZC.js" as="script" crossorigin />
+		<link rel="preload" href="polygonjs/js/scene_02/chunk-Y4M4RIKR.js" as="script" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_02/root.json?t=1651080367786" as="fetch" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_02/properties.json?t=1651080367786" as="fetch" crossorigin />
 		<link
 			rel="preload"
-			href="polygonjs/js/scene_02/modules/GLTFLoader.js?polygon=1_1_252"
-			as="script"
-			crossorigin
-		/>
-		<link rel="preload" href="polygonjs/js/scene_02/chunk-4NZTGWFT.js" as="script" crossorigin />
-		<link rel="preload" href="polygonjs/js/scene_02/chunk-FVLBNX7V.js" as="script" crossorigin />
-		<link rel="preload" href="polygonjs/js/scene_02/chunk-KBNISIIW.js" as="script" crossorigin />
-		<link rel="preload" href="polygonjs/js/scene_02/chunk-WDUCRR75.js" as="script" crossorigin />
-		<link rel="preload" href="polygonjs/scenes/scene_02/root.json?t=1650557705089" as="fetch" crossorigin />
-		<link rel="preload" href="polygonjs/scenes/scene_02/properties.json?t=1650557705089" as="fetch" crossorigin />
-		<link
-			rel="preload"
-			href="polygonjs/scenes/scene_02/root/perspectiveCamera1.json?t=1650557705089"
+			href="polygonjs/scenes/scene_02/root/perspectiveCamera1.json?t=1651080367786"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_02/root/perspectiveCamera1/events1.json?t=1650557705089"
+			href="polygonjs/scenes/scene_02/root/perspectiveCamera1/events1.json?t=1651080367786"
 			as="fetch"
 			crossorigin
 		/>
-		<link rel="preload" href="polygonjs/scenes/scene_02/root/floor.json?t=1650557705089" as="fetch" crossorigin />
-		<link rel="preload" href="polygonjs/scenes/scene_02/root/COP.json?t=1650557705089" as="fetch" crossorigin />
-		<link rel="preload" href="polygonjs/scenes/scene_02/root/geo2.json?t=1650557705089" as="fetch" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_02/root/floor.json?t=1651080367786" as="fetch" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_02/root/COP.json?t=1651080367786" as="fetch" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_02/root/geo2.json?t=1651080367786" as="fetch" crossorigin />
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_02/root/geo2/MAT.json?t=1650557705089"
+			href="polygonjs/scenes/scene_02/root/geo2/MAT.json?t=1651080367786"
 			as="fetch"
 			crossorigin
 		/>
-		<link rel="preload" href="polygonjs/scenes/scene_02/root/rhino.json?t=1650557705089" as="fetch" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_02/root/rhino.json?t=1651080367786" as="fetch" crossorigin />
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_02/root/rhino/MAT.json?t=1650557705089"
-			as="fetch"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="polygonjs/scenes/scene_02/root/rhino/MAT/meshPhysicalBuilder1.json?t=1650557705089"
+			href="polygonjs/scenes/scene_02/root/rhino/MAT.json?t=1651080367786"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_02/root/rhino/MAT/meshLambertBuilder_INSTANCES.json?t=1650557705089"
+			href="polygonjs/scenes/scene_02/root/rhino/MAT/meshPhysicalBuilder1.json?t=1651080367786"
 			as="fetch"
 			crossorigin
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_02/root/rhino/MAT/meshPhysicalBuilder_INSTANCES.json?t=1650557705089"
+			href="polygonjs/scenes/scene_02/root/rhino/MAT/meshLambertBuilder_INSTANCES.json?t=1651080367786"
+			as="fetch"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="polygonjs/scenes/scene_02/root/rhino/MAT/meshPhysicalBuilder_INSTANCES.json?t=1651080367786"
 			as="fetch"
 			crossorigin
 		/>

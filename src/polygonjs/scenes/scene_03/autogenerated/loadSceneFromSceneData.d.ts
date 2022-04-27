@@ -6,9 +6,10 @@ import {BaseViewerType} from '@polygonjs/polygonjs/dist/src/engine/viewers/_Base
 
 export interface loadSceneOptions {
 	sceneData: SceneJsonExporterData;
-	onProgress: OnProgressCallback;
+	onProgress?: OnProgressCallback;
 	autoPlay?: boolean;
-	domElement?: HTMLElement;
+	createViewer?: boolean;
+	domElement?: HTMLElement | string;
 	runRegister?: boolean;
 	assetsRoot?: string;
 	libsRootPrefix?: string;

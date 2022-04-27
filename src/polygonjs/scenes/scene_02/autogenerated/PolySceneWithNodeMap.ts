@@ -30,7 +30,7 @@ import {TransformSopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/sop/T
 import {CameraOrbitControlsEventNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/event/CameraOrbitControls';
 // cop
 import {EnvMapCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/EnvMap';
-import {ImageCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/Image';
+import {ImageEXRCopNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/cop/ImageEXR';
 // mat
 import {MeshBasicMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshBasic';
 import {MeshLambertBuilderMatNode} from '@polygonjs/polygonjs/dist/src/engine/nodes/mat/MeshLambertBuilder';
@@ -47,7 +47,7 @@ export class PolySceneWithNodeMap_scene_02 extends PolyScene {
 	node(path: '/floor/circle1'): CircleSopNode;
 	node(path: '/floor/reflector1'): ReflectorSopNode;
 	node(path: '/COP'): CopNetworkObjNode;
-	node(path: '/COP/image1'): ImageCopNode;
+	node(path: '/COP/image1'): ImageEXRCopNode;
 	node(path: '/COP/envMap1'): EnvMapCopNode;
 	node(path: '/geo2'): GeoObjNode;
 	node(path: '/geo2/sphere1'): SphereSopNode;

@@ -30,11 +30,11 @@ export class PolySceneWithNodeMap_scene_01 extends PolyScene {
 	node(path: '/geo1/plane1'): PlaneSopNode;
 	node(path: '/geo1/material1'): MaterialSopNode;
 	node(path: '/geo1/transform1'): TransformSopNode;
+	node(path: '/geo1/transform2'): TransformSopNode;
 	node(path: '/geo1/COP'): CopNetworkSopNode;
 	node(path: '/geo1/COP/image_VUE'): ImageCopNode;
 	node(path: '/geo1/MAT'): MaterialsNetworkSopNode;
 	node(path: '/geo1/MAT/meshStandard1'): MeshStandardMatNode;
-	node(path: '/geo1/transform2'): TransformSopNode;
 	node(path: '/perspectiveCamera1'): PerspectiveCameraObjNode;
 	node(path: '/perspectiveCamera1/events1'): EventsNetworkSopNode;
 	node(path: '/perspectiveCamera1/events1/cameraOrbitControls1'): CameraOrbitControlsEventNode;

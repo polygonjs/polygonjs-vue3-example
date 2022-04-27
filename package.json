@@ -10,7 +10,7 @@
   "dependencies": {
     "@polygonjs/vue3": "^1.1.252",
     "core-js": "^3.8.3",
-    "polygonjs-editor": "^1.1.252-1",
+    "polygonjs-editor": "^1.1.257-1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },

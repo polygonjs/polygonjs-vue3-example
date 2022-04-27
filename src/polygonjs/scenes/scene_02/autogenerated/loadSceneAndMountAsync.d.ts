@@ -1,27 +1,5 @@
-import {SceneJsonExporterData} from '@polygonjs/polygonjs/dist/src/engine/io/json/export/Scene';
-import {BaseViewerType} from '@polygonjs/polygonjs/dist/src/engine/viewers/_Base';
-import {PolySceneWithNodeMap_scene_02} from './PolySceneWithNodeMap';
+import {LoadSceneAsyncOptions, LoadedData} from './loadSceneAsync';
 
-type OnProgressCallback = (ratio: number, args: any) => void;
-type ConfigureSceneData = (sceneData: SceneJsonExporterData) => void;
-
-interface LoadSceneAndMountAsyncOptions {
-	onProgress: OnProgressCallback;
-	domElement?: HTMLElement;
-	moduleImportSuffix?: string;
-	loadModules?: boolean;
-	runRegister?: boolean;
-	configureSceneData?: ConfigureSceneData;
-	sceneDataRoot?: string;
-	assetsRoot?: string;
-	libsRootPrefix?: string;
-	autoPlay?: boolean;
-	printWarnings?: boolean;
-}
-interface LoadedData {
-	scene: PolySceneWithNodeMap_scene_02;
-	viewer: BaseViewerType | undefined;
-}
-type LoadSceneAndMountAsync_scene_02 = (options: LoadSceneAndMountAsyncOptions) => Promise<LoadedData>;
+type LoadSceneAndMountAsync_scene_02 = (options?: LoadSceneAsyncOptions) => Promise<LoadedData>;
 
 export const loadSceneAndMountAsync_scene_02: LoadSceneAndMountAsync_scene_02;

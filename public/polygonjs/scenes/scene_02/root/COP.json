@@ -2,7 +2,7 @@
 	"type": "copNetwork",
 	"nodes": {
 		"image1": {
-			"type": "image",
+			"type": "imageEXR",
 			"params": {
 				"url": "tex/ballroom_2k.exr?timestamp=1650548296298"
 			}
