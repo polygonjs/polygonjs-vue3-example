@@ -50,7 +50,7 @@ const loadSceneFromSceneData_scene_01 = async function (options) {
 		createViewer,
 	});
 	return {
-		scene: scene,
+		scene,
 		viewer,
 	};
 };

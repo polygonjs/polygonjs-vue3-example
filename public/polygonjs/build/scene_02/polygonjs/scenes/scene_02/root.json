@@ -37,6 +37,7 @@
 		}
 	},
 	"params": {
+		"mainCameraPath": "/perspectiveCamera1",
 		"nodesMask": "*/file* */image* */envMap* */OUT*"
 	},
 	"selection": [

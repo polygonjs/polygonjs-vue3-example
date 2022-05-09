@@ -31,6 +31,7 @@
 		}
 	},
 	"params": {
+		"mainCameraPath": "/perspectiveCamera1",
 		"displayAudioIcon": 1,
 		"audioIconColor": [
 			1,

@@ -964,6 +964,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@jscad/modeling@2.9.3":
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/@jscad/modeling/-/modeling-2.9.3.tgz#b058015b82fb6fd54257f32510ce4b8cc491d257"
+  integrity sha512-UnSKU1OAl5g93sh84VnDxF/EMGsUBIZuhD1PjkCh3Gxaut3p+39GTTF5MHYhGFEfvQKbhXQHVbtoE+mdohQuxg==
+
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.3"
   resolved "https://registry.npmmirror.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.3.tgz#0300943770e04231041a51bd39f0439b5c7ab4f0"
@@ -1002,11 +1007,12 @@
   resolved "https://registry.npmmirror.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@polygonjs/polygonjs@1.1.257":
-  version "1.1.257"
-  resolved "https://registry.yarnpkg.com/@polygonjs/polygonjs/-/polygonjs-1.1.257.tgz#8dd642f6fdc42e87f2af3f801b0282affe39fc47"
-  integrity sha512-SI/6arEXVeOETmQqO9jHag28Ejg44nMWMCktF1GDHHj+RqK8JMuEgFLKDKCBp2CEEMeYAj04/YIDxJFs0G8PwQ==
+"@polygonjs/polygonjs@1.1.258", "@polygonjs/polygonjs@^1.1.258":
+  version "1.1.258"
+  resolved "https://registry.yarnpkg.com/@polygonjs/polygonjs/-/polygonjs-1.1.258.tgz#66d0a0330bed57074cc0a23089dbe2addcb3035d"
+  integrity sha512-mZ5x+k6/cpgwtd5tnFNjQgZsmoBoVGjeHx+/ly9P1VqVSaDMnMIeF08yXByeh/hSNOb5KYCL5YZiwWuD/OesYA==
   dependencies:
+    "@jscad/modeling" "2.9.3"
     "@types/three" "0.139.0"
     chromotome "1.20.0"
     fflate "0.7.3"
@@ -1019,33 +1025,14 @@
     three "0.139.2"
     three-mesh-bvh "0.5.8"
     tone "14.7.77"
-    xatlas-web "^0.1.0"
+    xatlas-web "0.1.0"
 
-"@polygonjs/polygonjs@^1.1.252":
-  version "1.1.252"
-  resolved "https://registry.yarnpkg.com/@polygonjs/polygonjs/-/polygonjs-1.1.252.tgz#045d78195046fe677d2c3944b3a59b58000365dc"
-  integrity sha512-niziXrb2irhULFtlsbI8cT/+bknon80tI1Bm9wenqkhFSw53+UVCJVW5/ZXeePvg+p3lUVuy2NoINZBiGbfkPw==
+"@polygonjs/vue3@^1.1.258":
+  version "1.1.258"
+  resolved "https://registry.yarnpkg.com/@polygonjs/vue3/-/vue3-1.1.258.tgz#d3d8fc0e1cf12989312202e4da58c1381c491149"
+  integrity sha512-q7H7YKX9ZPtU5XjbPyj854oozsqwWltvbbcPxSTtD6T1FflVxA+80PrZyDc1DlVOUi7tRTsJeMXpjyh+LGScNg==
   dependencies:
-    "@types/three" "0.139.0"
-    chromotome "1.20.0"
-    fflate "0.7.3"
-    gifuct-js "2.1.2"
-    gsap "3.8.0"
-    jsep "0.3.5"
-    lodash "4.17.21"
-    opentype.js "1.3.4"
-    potpack "1.0.2"
-    three "0.139.2"
-    three-mesh-bvh "0.5.8"
-    tone "14.7.77"
-    xatlas-web "^0.1.0"
-
-"@polygonjs/vue3@^1.1.252":
-  version "1.1.252"
-  resolved "https://registry.yarnpkg.com/@polygonjs/vue3/-/vue3-1.1.252.tgz#d9728821c1f1555f799b16c407ed22763f8baa3d"
-  integrity sha512-vHm/xJ+ulFaXpcYG2/Sp+T/5k9jeZIGGQfN0Rke0JAX4Omm0aZY0uTaqLkV9dBGswP/bQd7xnf4YpjX7eyiMiQ==
-  dependencies:
-    "@polygonjs/polygonjs" "^1.1.252"
+    "@polygonjs/polygonjs" "^1.1.258"
     core-js "^3.8.3"
     vue "^3.2.13"
 
@@ -3890,11 +3877,6 @@ js-tokens@^4.0.0:
   resolved "https://registry.npmmirror.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-jsep@0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/jsep/-/jsep-0.3.5.tgz#3fd79ebd92f6f434e4857d5272aaeef7d948264d"
-  integrity sha512-AoRLBDc6JNnKjNcmonituEABS5bcfqDhQAWWXNTFrqu6nVXBpBAGfcoTGZMFlIrh9FjmE1CQyX9CTNwZrXMMDA==
-
 jsep@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/jsep/-/jsep-1.0.3.tgz#0adfc5729728eedc88bdb3abb01052aa779f6e40"
@@ -4618,12 +4600,12 @@ pkg-dir@^4.1.0:
   dependencies:
     find-up "^4.0.0"
 
-polygonjs-editor@^1.1.257-1:
-  version "1.1.257-1"
-  resolved "https://registry.yarnpkg.com/polygonjs-editor/-/polygonjs-editor-1.1.257-1.tgz#fc133ba8fbe699134fd7af22ab36e9a059f50d23"
-  integrity sha512-txqGRuo/cfnXnwD0bJzFhlDcdSFjDkufZFoqFcmOnHfkMCXn8v+7zHmdrgz3bGCr4tg1Wem5+4Dz1XXmt7pgMA==
+polygonjs-editor@^1.1.258-1:
+  version "1.1.258-1"
+  resolved "https://registry.yarnpkg.com/polygonjs-editor/-/polygonjs-editor-1.1.258-1.tgz#bfc0e16da21acbca6cbdad7828a219cf24e1e038"
+  integrity sha512-jAB/tGRf285m5omTjMuhwoqh30f+5aYwhCxUOQ8U20GAKOb2hesJPfv7jyZEFiDTSTvvyTGflQvgfrI8hOvfcA==
   dependencies:
-    "@polygonjs/polygonjs" "1.1.257"
+    "@polygonjs/polygonjs" "1.1.258"
     btoa "1.2.1"
     chalk "4.1.0"
     cors "2.8.5"
@@ -6173,7 +6155,7 @@ ws@^8.4.2:
   resolved "https://registry.npmmirror.com/ws/-/ws-8.5.0.tgz#bfb4be96600757fe5382de12c670dab984a1ed4f"
   integrity sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==
 
-xatlas-web@^0.1.0:
+xatlas-web@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/xatlas-web/-/xatlas-web-0.1.0.tgz#c1c636d557cbcd30726b546cde011c3861b6e4ef"
   integrity sha512-PprVfuXbaIskxLTLBUQRaWfgSy9xUQqAMIRooOw0P6NYqwgh6T0voeer6+Z5M7AFt5SGXUybuww/uDGs1yw8vQ==

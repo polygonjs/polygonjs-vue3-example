@@ -20,5 +20,8 @@
 				"display": true
 			}
 		}
+	},
+	"params": {
+		"mainCameraPath": "/perspectiveCamera1"
 	}
 }
