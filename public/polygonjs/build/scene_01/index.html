@@ -105,7 +105,7 @@
 		</style>
 
 		<script id="load-scene-scene_01" type="module">
-			import {loadSceneAndMountAsync_scene_01} from './polygonjs/js/scene_01/loadSceneAndMountAsync.js';
+			import {fetchSceneAndMount_scene_01} from './polygonjs/js/scene_01/fetchSceneAndMount.js';
 
 			const container = document.getElementById('polygonjs-progress-bar-container');
 			const barElement = document.getElementById('polygonjs-progress-bar');
@@ -147,7 +147,7 @@
 					console.error("element 'polygonjs-app-scene_01' not found");
 					return;
 				}
-				const loadedData = await loadSceneAndMountAsync_scene_01({
+				const loadedData = await fetchSceneAndMount_scene_01({
 					autoPlay: true,
 					onProgress,
 					domElement,
@@ -162,15 +162,15 @@
 		<link rel="preload" href="tex/vue_logo.png?timestamp=1650546697216" as="image" crossorigin />
 		<link
 			rel="preload"
-			href="polygonjs/js/scene_01/loadSceneAndMountAsync.js?t=1652118039098"
+			href="polygonjs/js/scene_01/fetchSceneAndMount.js?t=1663587053586"
 			as="script"
 			crossorigin
 		/>
-		<link rel="preload" href="polygonjs/js/scene_01/loadSceneAsync.js?t=1652118039098" as="script" crossorigin />
-		<link rel="preload" href="polygonjs/js/scene_01/chunk-IHJHF5GE.js" as="script" crossorigin />
-		<link rel="preload" href="polygonjs/js/scene_01/chunk-YGXD56TG.js" as="script" crossorigin />
+		<link rel="preload" href="polygonjs/js/scene_01/loadScene.js?t=1663587053586" as="script" crossorigin />
+		<link rel="preload" href="polygonjs/js/scene_01/chunk-FUA5VYU3.js" as="script" crossorigin />
+		<link rel="preload" href="polygonjs/js/scene_01/chunk-UGBFX4GW.js" as="script" crossorigin />
 		<link rel="preload" href="polygonjs/scenes/scene_01/root.json?t=1652118039352" as="fetch" crossorigin />
-		<link rel="preload" href="polygonjs/scenes/scene_01/properties.json?t=1652118039352" as="fetch" crossorigin />
+		<link rel="preload" href="polygonjs/scenes/scene_01/properties.json?t=1663587053590" as="fetch" crossorigin />
 		<link rel="preload" href="polygonjs/scenes/scene_01/root/geo1.json?t=1652118039352" as="fetch" crossorigin />
 		<link
 			rel="preload"
@@ -180,7 +180,7 @@
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/geo1/MAT.json?t=1652118039352"
+			href="polygonjs/scenes/scene_01/root/geo1/MAT.json?t=1663587053590"
 			as="fetch"
 			crossorigin
 		/>
@@ -192,7 +192,7 @@
 		/>
 		<link
 			rel="preload"
-			href="polygonjs/scenes/scene_01/root/perspectiveCamera1/events1.json?t=1652118039352"
+			href="polygonjs/scenes/scene_01/root/perspectiveCamera1/events1.json?t=1663587053590"
 			as="fetch"
 			crossorigin
 		/>

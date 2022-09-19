@@ -1,6 +1,6 @@
 {
   "name": "polygonjs_with_vue3",
-  "version": "0.1.0",
+  "version": "1.2.21",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,9 +8,9 @@
     "polygon": "polygonjs-editor"
   },
   "dependencies": {
-    "@polygonjs/vue3": "^1.1.258",
+    "@polygonjs/vue3": "^1.2.21",
     "core-js": "^3.8.3",
-    "polygonjs-editor": "^1.1.258-1",
+    "polygonjs-editor": "^1.2.21-1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },

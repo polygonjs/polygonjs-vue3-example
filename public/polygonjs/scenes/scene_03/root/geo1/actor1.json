@@ -87,11 +87,7 @@
 				},
 				"ifTrue": {
 					"type": "color",
-					"default_value": [
-						0,
-						0,
-						0
-					],
+					"default_value": [0, 0, 0],
 					"options": {
 						"spare": true,
 						"editable": false
@@ -99,11 +95,7 @@
 				},
 				"ifFalse": {
 					"type": "color",
-					"default_value": [
-						0,
-						0,
-						0
-					],
+					"default_value": [0, 0, 0],
 					"options": {
 						"spare": true,
 						"editable": false
@@ -136,19 +128,19 @@
 					},
 					{
 						"name": "ifTrue",
-						"type": "color",
+						"type": "Color",
 						"isArray": false
 					},
 					{
 						"name": "ifFalse",
-						"type": "color",
+						"type": "Color",
 						"isArray": false
 					}
 				],
 				"out": [
 					{
 						"name": "val",
-						"type": "color",
+						"type": "Color",
 						"isArray": false
 					}
 				]
@@ -158,18 +150,14 @@
 			"type": "constant",
 			"params": {
 				"type": 1,
-				"color": [
-					0.2627450980392157,
-					0.37254901960784315,
-					0.47843137254901963
-				]
+				"color": [0.2627450980392157, 0.37254901960784315, 0.47843137254901963]
 			},
 			"connection_points": {
 				"in": [],
 				"out": [
 					{
 						"name": "val",
-						"type": "color",
+						"type": "Color",
 						"isArray": false
 					}
 				]
@@ -179,18 +167,14 @@
 			"type": "constant",
 			"params": {
 				"type": 1,
-				"color": [
-					1,
-					1,
-					1
-				]
+				"color": [1, 1, 1]
 			},
 			"connection_points": {
 				"in": [],
 				"out": [
 					{
 						"name": "val",
-						"type": "color",
+						"type": "Color",
 						"isArray": false
 					}
 				]
@@ -477,7 +461,5 @@
 			}
 		}
 	},
-	"inputs": [
-		"audioNotes1"
-	]
+	"inputs": ["audioNotes1"]
 }

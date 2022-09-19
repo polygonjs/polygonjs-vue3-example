@@ -11,9 +11,7 @@
 		},
 		"reflector1": {
 			"type": "reflector",
-			"inputs": [
-				"circle1"
-			],
+			"inputs": ["circle1"],
 			"flags": {
 				"display": true
 			}

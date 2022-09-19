@@ -12,9 +12,7 @@
 			"params": {
 				"material": "../MAT/meshBasic1"
 			},
-			"inputs": [
-				"sphere1"
-			]
+			"inputs": ["sphere1"]
 		},
 		"objectProperties1": {
 			"type": "objectProperties",
@@ -24,17 +22,13 @@
 				"treceiveShadow": 1,
 				"receiveShadow": 0
 			},
-			"inputs": [
-				"material1"
-			],
+			"inputs": ["material1"],
 			"flags": {
 				"display": true
 			}
 		}
 	},
-	"inputs": [
-		"pointLight1"
-	],
+	"inputs": ["pointLight1"],
 	"flags": {
 		"display": true
 	}

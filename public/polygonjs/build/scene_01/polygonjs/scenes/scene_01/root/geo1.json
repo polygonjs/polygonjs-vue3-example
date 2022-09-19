@@ -5,34 +5,17 @@
 			"type": "copy",
 			"params": {
 				"count": 14,
-				"t": [
-					0,
-					0,
-					-0.7
-				],
-				"r": [
-					0,
-					0,
-					13
-				]
+				"t": [0, 0, -0.7],
+				"r": [0, 0, 13]
 			},
-			"inputs": [
-				"material1"
-			]
+			"inputs": ["material1"]
 		},
 		"plane1": {
 			"type": "plane",
 			"params": {
-				"size": [
-					5.12,
-					4.44
-				],
+				"size": [5.12, 4.44],
 				"useSegmentsCount": 1,
-				"direction": [
-					0,
-					0,
-					1
-				]
+				"direction": [0, 0, 1]
 			}
 		},
 		"material1": {
@@ -40,33 +23,23 @@
 			"params": {
 				"material": "../MAT/meshStandard1"
 			},
-			"inputs": [
-				"transform1"
-			]
+			"inputs": ["transform1"]
 		},
 		"transform1": {
 			"type": "transform",
 			"params": {
 				"scale": 0.4
 			},
-			"inputs": [
-				"plane1"
-			]
+			"inputs": ["plane1"]
 		},
 		"transform2": {
 			"type": "transform",
 			"params": {
 				"applyOn": 1,
 				"objectMode": 1,
-				"t": [
-					0,
-					1.4523557836952077,
-					0
-				]
+				"t": [0, 1.4523557836952077, 0]
 			},
-			"inputs": [
-				"copy1"
-			],
+			"inputs": ["copy1"],
 			"flags": {
 				"display": true
 			}

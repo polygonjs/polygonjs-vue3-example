@@ -4,9 +4,7 @@
 		"split_panel0": {
 			"split_ratio": 0.4848837209302326,
 			"split_panel0": {
-				"panelTypes": [
-					"viewer"
-				],
+				"panelTypes": ["viewer"],
 				"currentPanelIndex": 0,
 				"panel_data": {
 					"camera": "/perspectiveCamera1",
@@ -14,9 +12,7 @@
 				}
 			},
 			"split_panel1": {
-				"panelTypes": [
-					"params"
-				],
+				"panelTypes": ["params"],
 				"currentPanelIndex": 0,
 				"panel_data": {
 					"active_folder": null,
@@ -26,11 +22,7 @@
 			"split_mode": "vertical"
 		},
 		"split_panel1": {
-			"panelTypes": [
-				"network",
-				"params",
-				"viewer"
-			],
+			"panelTypes": ["network", "params", "viewer"],
 			"currentPanelIndex": 0,
 			"panel_data": {
 				"camera": {
@@ -152,16 +144,7 @@
 		},
 		"split_mode": "horizontal"
 	},
-	"currentNodes": [
-		"/rhino",
-		"/rhino",
-		"/rhino",
-		"/rhino",
-		"/rhino",
-		"/rhino",
-		"/rhino",
-		"/rhino"
-	],
+	"currentNodes": ["/rhino", "/rhino", "/rhino", "/rhino", "/rhino", "/rhino", "/rhino", "/rhino"],
 	"navigationHistory": {
 		"nodePaths": {
 			"1": [
@@ -213,27 +196,13 @@
 				"/rhino/MAT",
 				"/rhino"
 			],
-			"2": [
-				"/rhino"
-			],
-			"3": [
-				"/rhino"
-			],
-			"4": [
-				"/rhino"
-			],
-			"5": [
-				"/rhino"
-			],
-			"6": [
-				"/rhino"
-			],
-			"7": [
-				"/rhino"
-			],
-			"8": [
-				"/rhino"
-			]
+			"2": ["/rhino"],
+			"3": ["/rhino"],
+			"4": ["/rhino"],
+			"5": ["/rhino"],
+			"6": ["/rhino"],
+			"7": ["/rhino"],
+			"8": ["/rhino"]
 		},
 		"index": {
 			"1": 46,
@@ -249,7 +218,9 @@
 	"fullscreenPanelId": null,
 	"saveOptions": {
 		"createExport": true,
+		"skipExportSinceRemoteAssetsPresents": false,
 		"compressJs": true,
+		"createZip": false,
 		"publishToIntegrations": false
 	},
 	"paramsModal": []

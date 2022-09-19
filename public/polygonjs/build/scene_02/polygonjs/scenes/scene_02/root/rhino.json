@@ -6,9 +6,7 @@
 			"params": {
 				"material": "../MAT/meshPhysicalBuilder1"
 			},
-			"inputs": [
-				"hierarchy1"
-			]
+			"inputs": ["hierarchy1"]
 		},
 		"fileGLTF1": {
 			"type": "fileGLTF",
@@ -22,18 +20,14 @@
 			"params": {
 				"mode": 1
 			},
-			"inputs": [
-				"fileGLTF1"
-			]
+			"inputs": ["fileGLTF1"]
 		},
 		"scatter1": {
 			"type": "scatter",
 			"params": {
 				"pointsCount": 10000
 			},
-			"inputs": [
-				"hierarchy1"
-			]
+			"inputs": ["hierarchy1"]
 		},
 		"point1": {
 			"type": "point",
@@ -53,46 +47,33 @@
 					"raw_input": "ch(\"../fuse1/dist\")"
 				}
 			},
-			"inputs": [
-				"scatter1"
-			]
+			"inputs": ["scatter1"]
 		},
 		"fuse1": {
 			"type": "fuse",
 			"params": {
 				"dist": 0.2
 			},
-			"inputs": [
-				"point1"
-			]
+			"inputs": ["point1"]
 		},
 		"instance1": {
 			"type": "instance",
 			"params": {
 				"material": "../MAT/meshPhysicalBuilder_INSTANCES"
 			},
-			"inputs": [
-				"roundedBox1",
-				"attribDelete1"
-			]
+			"inputs": ["roundedBox1", "attribDelete1"]
 		},
 		"attribDelete1": {
 			"type": "attribDelete",
 			"params": {
 				"name": "normal"
 			},
-			"inputs": [
-				"fuse1"
-			]
+			"inputs": ["fuse1"]
 		},
 		"roundedBox1": {
 			"type": "roundedBox",
 			"params": {
-				"size": [
-					"0.95*ch(\"../fuse1/dist\")",
-					"0.95*ch(\"../fuse1/dist\")",
-					"0.95*ch(\"../fuse1/dist\")"
-				],
+				"size": "0.95*ch(\"../fuse1/dist\")",
 				"bevel": "0.05*ch(\"../fuse1/dist\")"
 			}
 		},
@@ -100,29 +81,18 @@
 			"type": "transform",
 			"params": {
 				"applyOn": 1,
-				"t": [
-					-1.7,
-					0,
-					0
-				]
+				"t": [-1.7, 0, 0]
 			},
-			"inputs": [
-				"instance1"
-			]
+			"inputs": ["instance1"]
 		},
 		"merge1": {
 			"type": "merge",
-			"inputs": [
-				"material1",
-				"transform1"
-			],
+			"inputs": ["material1", "transform1"],
 			"cloned_state_overriden": true
 		},
 		"OUT": {
 			"type": "null",
-			"inputs": [
-				"merge1"
-			],
+			"inputs": ["merge1"],
 			"flags": {
 				"display": true
 			},

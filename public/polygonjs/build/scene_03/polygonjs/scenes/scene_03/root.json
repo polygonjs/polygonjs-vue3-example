@@ -10,11 +10,7 @@
 		"spotLight1": {
 			"type": "spotLight",
 			"params": {
-				"t": [
-					2,
-					2,
-					0
-				]
+				"t": [2, 2, 0]
 			},
 			"flags": {
 				"display": true
@@ -22,9 +18,7 @@
 		},
 		"audioListener1": {
 			"type": "audioListener",
-			"inputs": [
-				"perspectiveCamera1"
-			],
+			"inputs": ["perspectiveCamera1"],
 			"flags": {
 				"display": true
 			}
@@ -33,13 +27,6 @@
 	"params": {
 		"mainCameraPath": "/perspectiveCamera1",
 		"displayAudioIcon": 1,
-		"audioIconColor": [
-			1,
-			1,
-			1
-		]
-	},
-	"selection": [
-		"positionalAudio1"
-	]
+		"audioIconColor": [1, 1, 1]
+	}
 }

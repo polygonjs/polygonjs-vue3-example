@@ -10,11 +10,7 @@
 		"spotLight1": {
 			"type": "spotLight",
 			"params": {
-				"t": [
-					2,
-					2,
-					0
-				]
+				"t": [2, 2, 0]
 			},
 			"flags": {
 				"display": true

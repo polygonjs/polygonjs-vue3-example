@@ -6,30 +6,22 @@
 		},
 		"AMSynth1": {
 			"type": "AMSynth",
-			"inputs": [
-				"envelope1"
-			]
+			"inputs": ["envelope1"]
 		},
 		"playInstrument1": {
 			"type": "playInstrument",
-			"inputs": [
-				"sampler1"
-			]
+			"inputs": ["sampler1"]
 		},
 		"OUT": {
 			"type": "null",
-			"inputs": [
-				"playInstrument1"
-			]
+			"inputs": ["playInstrument1"]
 		},
 		"sampler1": {
 			"type": "sampler",
 			"params": {
 				"baseUrl": "/audio/samples"
 			},
-			"inputs": [
-				"envelope2"
-			]
+			"inputs": ["envelope2"]
 		},
 		"envelope2": {
 			"type": "envelope"
@@ -39,9 +31,7 @@
 		"audioNode": "OUT",
 		"showHelper": 0
 	},
-	"inputs": [
-		"geo1"
-	],
+	"inputs": ["geo1"],
 	"flags": {
 		"display": true
 	}

@@ -14,9 +14,7 @@
 			"params": {
 				"size": 55
 			},
-			"inputs": [
-				"circle1"
-			],
+			"inputs": ["circle1"],
 			"flags": {
 				"display": true
 			}

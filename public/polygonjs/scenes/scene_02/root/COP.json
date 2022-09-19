@@ -9,9 +9,7 @@
 		},
 		"envMap1": {
 			"type": "envMap",
-			"inputs": [
-				"image1"
-			]
+			"inputs": ["image1"]
 		}
 	}
 }
