@@ -164,9 +164,9 @@
 	},
 	"fullscreenPanelId": null,
 	"saveOptions": {
-		"createExport": true,
+		"createExport": false,
 		"skipExportSinceRemoteAssetsPresents": false,
-		"compressJs": true,
+		"compressJs": false,
 		"createZip": false,
 		"publishToIntegrations": false
 	},
