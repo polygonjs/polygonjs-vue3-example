@@ -1,6 +1,6 @@
 import { SceneDataManifestImporter } from "@polygonjs/polygonjs/dist/src/engine/io/manifest/import/SceneData";
 const manifest = {
-  properties: "1664746324789",
+  properties: "1671454074849",
   root: "1663587076147",
   nodes: {
     geo1: "1652118053214",

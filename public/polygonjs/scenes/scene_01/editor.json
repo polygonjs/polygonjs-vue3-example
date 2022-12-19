@@ -8,6 +8,7 @@
 				"currentPanelIndex": 0,
 				"panel_data": {
 					"camera": "/perspectiveCamera1",
+					"isViewerInitLayoutData": true,
 					"linkIndex": 1
 				}
 			},
@@ -156,10 +157,11 @@
 	"fullscreenPanelId": null,
 	"saveOptions": {
 		"createExport": false,
-		"skipExportSinceRemoteAssetsPresents": false,
+		"checkRemoteAssetsUse": true,
+		"minimizeFilesCount": false,
 		"compressJs": false,
 		"createZip": false,
-		"publishToIntegrations": false
+		"runPostExportCommand": false
 	},
 	"paramsModal": []
 }

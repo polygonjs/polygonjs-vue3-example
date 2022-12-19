@@ -150,6 +150,8 @@ export interface PolySceneProps_scene_02 {
   "pointLight1--shadowBias"?: ParamValueSerializedTypeMap["float"];
   "pointLight1--shadowNear"?: ParamValueSerializedTypeMap["float"];
   "pointLight1--shadowFar"?: ParamValueSerializedTypeMap["float"];
+  "pointLight1--raymarching"?: ParamValueSerializedTypeMap["folder"];
+  "pointLight1--raymarchingPenumbra"?: ParamValueSerializedTypeMap["float"];
   "hemisphereLight1--skyColor"?: ParamValueSerializedTypeMap["color"];
   "hemisphereLight1--skyColor-skyColorr"?: ParamValueSerializedTypeMap["float"];
   "hemisphereLight1--skyColor-skyColorg"?: ParamValueSerializedTypeMap["float"];

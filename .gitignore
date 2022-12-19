@@ -27,3 +27,4 @@ public/polygonjs/backup
 public/polygonjs/build
 public/polygonjs/js
 public/models/backup
+.polygonjs-editor.log

@@ -326,6 +326,7 @@ export interface PolySceneProps_scene_03 {
   "geo1-material1--swapCurrentTex"?: ParamValueSerializedTypeMap["boolean"];
   "geo1-material1--texSrc0"?: ParamValueSerializedTypeMap["string"];
   "geo1-material1--texDest0"?: ParamValueSerializedTypeMap["string"];
+  "geo1-actor1--objectsMask"?: ParamValueSerializedTypeMap["string"];
   "geo1-actor1--useThisNode"?: ParamValueSerializedTypeMap["boolean"];
   "geo1-actor1--node"?: ParamValueSerializedTypeMap["node_path"];
   "geo1-actor1-onObjectHover1--element"?: ParamValueSerializedTypeMap["integer"];

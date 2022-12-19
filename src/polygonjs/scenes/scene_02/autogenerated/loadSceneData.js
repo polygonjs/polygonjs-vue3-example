@@ -1,6 +1,6 @@
 import { SceneDataManifestImporter } from "@polygonjs/polygonjs/dist/src/engine/io/manifest/import/SceneData";
 const manifest = {
-  properties: "1664746323001",
+  properties: "1671454067742",
   root: "1663587066676",
   nodes: {
     perspectiveCamera1: "1652118046250",
@@ -11,9 +11,9 @@ const manifest = {
     "geo2/MAT": "1652118046250",
     rhino: "1663587066676",
     "rhino/MAT": "1652118046250",
-    "rhino/MAT/meshPhysicalBuilder1": "1663587066676",
-    "rhino/MAT/meshLambertBuilder_INSTANCES": "1663587066676",
-    "rhino/MAT/meshPhysicalBuilder_INSTANCES": "1663587066676",
+    "rhino/MAT/meshPhysicalBuilder1": "1671454067742",
+    "rhino/MAT/meshLambertBuilder_INSTANCES": "1671454067742",
+    "rhino/MAT/meshPhysicalBuilder_INSTANCES": "1671454067742",
   },
   shaders: {
     "/rhino/MAT/meshPhysicalBuilder1": {
